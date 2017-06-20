@@ -1,0 +1,26 @@
+extends layout
+
+block content
+    link(rel='stylesheet prefetch', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
+    link(rel='stylesheet', href='css/result.css')
+    h2.section-heading The Users That You Follow But Doesnt Follow You Back!
+    .row
+      each user in users
+       .col-md-12
+         .media
+           a.pull-left(href='#')
+             img.media-object.dp.img-circle(src=user.avatar, style='width: 100px;height:100px;')
+           .media-body
+             h4.media-heading
+               | #{user.name}.
+               small  Twitter
+             h5
+               | View Twitter Profile 
+               a(href='https://twitter.com/'+user.screen_name) here
+             hr(style='margin:8px auto')
+             br
+             a(href='#')
+               span.label.label-danger favourites: #{user.fav}
+             a(href='#')
+               span.label.label-success followers: #{user.flwcnt}
+             

@@ -1,0 +1,23 @@
+extends layout
+
+block content
+    .top-toolbar
+      nav
+    .search
+      .logo
+        img(src='http://www.woodstockproduction.com/Twitter-Logo.png')
+      form(method='post')
+        input.search-bar(name='userid', type='text', placeholder='Enter username')
+        .search-nav
+          .search-button
+            input.btn.btn-primary(type='submit', value='Send')
+    .footer
+      footer.bottom-toolbar
+        nav.footer-left
+          a(href='https://github.com/aswinzz/twitter') Github
+          a(href='http://aswinzz.com') Website
+          a(href='https:twitter.com/aswinvb1') MyTwitter
+        nav.footer-right
+          a(href='#') New Privacy & Terms
+          a(href='#') Settings
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa', crossorigin='anonymous')

@@ -15,4 +15,10 @@ I have made a webapp using nodejs and twitter api which will display the users t
 * Open `localhost:3000` in any browser
 
 
+# Take A Look-
+
+![scr1](scr1.png)
+
+![scr2](scr2.png)
+
  
